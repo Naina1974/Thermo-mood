@@ -54,7 +54,7 @@ This repository includes a comprehensive web application featuring:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/thermo-mood-cube.git
+git clone https://github.com/naina1974/thermo-mood-cube.git
 cd thermo-mood-cube
 ```
 
