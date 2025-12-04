@@ -47,7 +47,7 @@ This repository includes a comprehensive web application featuring:
 
 ### Prerequisites
 
-- Node.js 18+ and npm
+- Node.js 17,18+ and npm
 - Supabase account (for data logging features)
 
 ### Installation
