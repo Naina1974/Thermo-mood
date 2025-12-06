@@ -1,12 +1,17 @@
-# rough bom (not final, not ordered)
+# parts list (rough / not final)
 
-electronics:
 - esp32 dev board
-- ws2812b leds
+- ws2812b led strip
 - temp/humidity sensor
-- mic module (later)
+- mic sensor (maybe)
 - 5v power supply
+- jumper wires
+- connectors
 - resistors + caps
+- wood + epoxy
+- diffuser sheet
+
+not ordered yet
 
 wiring:
 - jumper wires
