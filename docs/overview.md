@@ -1,10 +1,17 @@
-thermo mood cube
+moodcanvas overview
 
-basically its an led cube thing that changes colors based on the room temp and stuff
-using an esp32 and some sensors to read temp/humidity
-the leds react to the environment so its like a mood lamp but smarter
+so the idea is an led display thing that reacts to the room
+like temp, humidity, maybe light levels
+using an esp32 and some sensors
 
-why am i building this?
-idk i thought itd be cool to have something on my desk that actually does something
-plus i wanna learn pcb design and embedded stuff
-seemed like a fun project to start with
+the vibe should be calm and aesthetic, not like a gaming rgb thing
+more like a soft glow that changes slowly based on environment
+something you could put on a desk or shelf
+
+thinking wood frame with a diffuser on top
+maybe frosted acrylic or something
+still figuring out the exact shape and size
+
+honestly im still learning a lot of this stuff
+pcb design is new to me and so is embedded coding
+but thats kinda the point, wanna learn by building something cool

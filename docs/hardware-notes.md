@@ -1,18 +1,23 @@
 hardware notes
 
 parts im thinking about:
-- esp32 devkit or maybe esp32-c3 mini
-- ws2812b leds or sk6812
-- dht22 or bme280 for temp sensing
-- some capacitors for power filtering
-
-pcb problems:
-- routing is confusing lol
-- not sure where to put the power traces
-- ground plane stuff is weird
+- esp32 (probably devkit to start, maybe custom board later)
+- ws2812b or sk6812 leds, not sure how many yet
+- temp/humidity sensor like dht22 or bme280
+- maybe a light sensor too
 
 power concerns:
-- leds draw a lot of current when bright
-- might need external 5v supply
-- voltage drop could be an issue with long led strips
-- need to figure out decoupling caps placement
+- leds use a lot of current especially at full white
+- need to calculate max draw based on led count
+- probably need external 5v supply, usb might not be enough
+- worried about voltage drop on longer strips
+
+pcb ideas:
+- keep it simple, just breakout for esp32 and connectors
+- maybe add some filtering caps
+- not sure about 2 layer vs 4 layer
+
+routing confusion:
+- ground planes are confusing
+- dont really get vias yet
+- watched some tutorials but still fuzzy on best practices

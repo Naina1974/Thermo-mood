@@ -1,17 +1,23 @@
 software notes
 
-animation stuff:
-- got basic color fades working
-- rainbow cycle looks ok but kinda choppy
-- trying to make smooth transitions between temps
+planning to use c++ with arduino framework
+seems like the easiest way to get started with esp32
+platformio might be useful later
 
-sensor reading:
-- dht22 is slow, like 2 sec between reads
-- sometimes get weird spikes in data
-- need to average readings maybe
+basic idea:
+- read sensor values (temp, humidity, etc)
+- map those values to colors or patterns
+- update leds smoothly without flickering
 
-issues:
-- leds flicker sometimes when updating fast
-- timing is off, delays mess with animations
-- fastled library helps but still learning it
-- might need to use millis() instead of delay()
+possible modes:
+- temperature reactive (cold=blue, warm=orange/red)
+- breathing/pulsing effect
+- slow color transitions
+- maybe a party mode but thats not the main goal
+
+no real code written yet
+waiting until i have hardware to test with
+dont wanna write a bunch of stuff that doesnt work
+
+might use fastled library, heard its good for ws2812
+need to research timing and non-blocking code

@@ -1,14 +1,23 @@
-progress update
+hardware progress
 
-messing around in kicad today
-placed some footprints but theyre probably in the wrong spots
-tried routing a few traces between the esp32 and leds
-got confused by layers and stuff
+opened kicad for the first time this week
+its kinda overwhelming but getting the hang of it
 
-learning tho
-watched some yt tutorials on pcb basics
-still dont really get vias but ill figure it out
-the schematic looks ok i think
-need to add more decoupling caps probably
+what ive done so far:
+- made a new project
+- added esp32 devkit footprint to schematic
+- placed some led connector symbols
+- added power input stuff
 
-gonna try to finish routing tomorrow maybe
+messing with pcb layout:
+- placed footprints on the board
+- tried to arrange things logically
+- no routing done yet, just placement
+
+learning stuff:
+- watched a few youtube tutorials on kicad basics
+- still confused about design rules
+- not sure what trace widths to use
+- ground planes seem important but idk how to do them right
+
+gonna keep experimenting before i actually route anything

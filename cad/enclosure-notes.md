@@ -1,17 +1,26 @@
-enclosure ideas
+enclosure notes
 
-thinking wood frame with epoxy top
-would look cool with the leds glowing through
-maybe walnut or oak for the base
+basic idea:
+- simple wood frame, maybe walnut or oak
+- diffuser on top to spread led light evenly
+- clean minimal look, no visible screws if possible
 
-diffuser problems:
-- need something to spread the led light evenly
-- tried paper but it looks cheap
-- acrylic might work but idk how to cut it
-- frosted plastic from amazon maybe?
+aesthetic goals:
+- should look like furniture not electronics
+- warm natural materials
+- soft glowing light, not harsh spots
 
-mounting:
-- not sure how to hold the pcb inside
-- standoffs? hot glue? lol
-- need access to usb port somehow
-- ventilation for heat maybe
+diffuser options:
+- frosted acrylic sheet
+- milk white plastic
+- maybe paper/fabric for softer look
+- need to test what spreads light best
+
+mounting challenges:
+- how to hold pcb inside securely
+- need access to usb for programming
+- might need ventilation holes for heat
+- cable management for power input
+
+still figuring out exact dimensions
+depends on led count and pcb size

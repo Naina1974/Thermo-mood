@@ -1,21 +1,25 @@
 firmware notes
 
-animations:
-- got breathing effect working sorta
-- color temp mapping is tricky
-- cold = blue, hot = red, but the middle colors are weird
+plans:
+- use arduino framework on esp32
+- keep code simple and modular
+- separate sensor reading from animation logic
 
-sensor stuff:
-- reading temp every few seconds
-- trying to smooth out the data
-- map() function is helpful
+animation ideas:
+- smooth color transitions using lerp or easing
+- update leds at consistent intervals
+- avoid using delay(), use millis() instead
+- maybe state machine for different modes
 
-timing issues:
-- animations stutter when reading sensors
-- might need to use interrupts or something
-- or just read sensor less often
+sensor handling:
+- read values every few seconds (sensors are slow anyway)
+- average multiple readings to smooth out noise
+- map sensor range to color range
 
-ideas:
-- add a mode button to switch effects
-- maybe wifi for remote temp logging
-- could add a display later idk
+waiting on hardware:
+- cant really test anything until parts arrive
+- will start with basic led blink test
+- then add sensor reading
+- then combine everything
+
+might write some pseudocode in the meantime
