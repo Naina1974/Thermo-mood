@@ -10,10 +10,12 @@ I haven't really done PCB design or woodworking before so I'm just figuring it o
 - testing LED animations on ESP32
 - sketched enclosure ideas
 - trying to understand power stuff for a lot of LEDs
+- 
+This is my first PCB layout test with the ESP32 and a few LEDs. I'm experimenting with spacing, footprints, and basic routing before scaling up to a larger LED matrix.
 
-I'll upload more photos/screenshots later. For now here's a KiCad screenshot (work in progress):
+I'll upload more photos/screenshots later. For now here's a screenshot (work in progress):
 
-![pcb](./images/pcb_screenshot.png)
+![pcb](./images/Early PCB Design WIP.jpg)
 
 ## Repo Structure
 
