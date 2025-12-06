@@ -53,6 +53,7 @@ Still experimenting with footprints and trying to understand how routing + power
 
 ## 📁 Repo Structure
 
+```
 moodcanvas/
 │
 ├── firmware/      # esp32 code + notes
@@ -64,6 +65,7 @@ moodcanvas/
 ├── docs/          # logs, notes, bom, etc
 └── README.md
 
+```
 ---
 
 ## 🧪 Old web sim thing
