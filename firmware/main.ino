@@ -1,5 +1,5 @@
 // moodcanvas firmware - WIP
-// dec 6: planning + writing code structure, no real hardware tests yet
+// planning + writing code structure, no real hardware tests yet
 
 #include <Arduino.h>
 #include <FastLED.h>
@@ -175,3 +175,4 @@ void loop() {
   // 5) small delay so it doesn’t spam too hard
   delay(80);
 }
+
