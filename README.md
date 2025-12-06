@@ -43,7 +43,7 @@ Here is a screenshot of my first PCB experiment in KiCad & some sketchs (very un
 
 ![pcb](./images/PCB.jpg)
 ![sketch](./images/Sketch.jpg)
-![sketch2](./images/sketch2.jpg)
+![sketch2](./images/Sketch2.jpg)
 
 I’m still just placing parts and figuring out spacing/routing, not actually doing final wiring yet.
 
@@ -78,7 +78,7 @@ Before building the hardware version I made a small web app to test color transi
 It wasn’t meant to be a full project, just a way to experiment with ideas.  
 
 I moved it to the `tools/` folder because it’s not part of the final build.
-Full guide ![Click Me](./tools/thermo-mood-cube-web-sim/readme.md)
+Full guide [Click Me](./tools/thermo-mood-cube-web-sim/readme.md)
 ---
 
 ## 📚 Things I’m Learning (aka struggling with)
