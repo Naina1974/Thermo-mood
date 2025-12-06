@@ -18,76 +18,71 @@ This whole thing is mostly me teaching myself:
 ## 🔧 Current Progress
 
 ### Hardware:
-- made a rough PCB layout in KiCad
-- figured out basic footprints for ESP32, LEDs, and some passives
-- routed a couple traces just to test things
-- learning how to not destroy everything with current draw
+- installed KiCad and started placing footprints for the ESP32 + connectors  
+- watched a bunch of tutorials to understand routing + spacing  
+- still figuring out power requirements for a lot of LEDs  
+- mostly experimenting with layout right now, nothing final
 
 ### Firmware:
-- testing LED animations on ESP32
-- trying to map sensor input to animations
-- experimenting with color palettes
+- set up a basic project file so there’s somewhere to write code later  
+- planning how animations might work based on sensor input  
+- reading about FastLED vs NeoPixel libraries  
+- no real testing yet because I don’t have parts
 
 ### Design:
-- sketched enclosure ideas
-- thinking about a diffuser panel or frosted acrylic
-- looking at ways to mount sensors cleanly
+- sketched some basic enclosure ideas in a notebook  
+- looking at wood + diffuser options  
+- trying to make it look minimal and not like a science project  
+- still deciding on final shape/size
 
-This is my first PCB attempt, so I’m starting small with just a few LEDs before scaling up to a full matrix.
+I’m still very early in the build, mostly learning stuff and trying to plan everything before buying parts so I don’t waste money.
 
 ---
 
-## 📸 Work in Progress Screenshot
+## 📸 Work in Progress Screenshots
 
-Here is a screenshot of my first PCB experiment in KiCad & some sketchs (very unfinished):
+Here are some early screenshots from KiCad and a few rough sketches.  
+They’re not final at all — just me figuring out placement, spacing, and general layout ideas.
 
-![pcb](./images/PCB.jpg)
+![pcb](./images/PCB.jpg)  
 ![sketch](./images/Sketch.jpg)
-![sketch2](./images/Sketch2.jpg)
 
-I’m still just placing parts and figuring out spacing/routing, not actually doing final wiring yet.
+Still experimenting with footprints and trying to understand how routing + power traces should work before committing to a full design.
 
 ---
 
 ## 📁 Repo Structure
 
-```
 moodcanvas/
 │
-├── firmware/      # ESP32 code + tests
-│
-├── hardware/      # KiCad PCB files + notes
-│
-├── cad/           # enclosure sketches + models
-│
-├── images/        # photos + screenshots
-│
-├── tools/         # experiments + side projects
+├── firmware/      # esp32 code + notes
+├── hardware/      # kicad files + pcb progress
+├── cad/           # enclosure sketches + ideas
+├── images/        # screenshots + photos
+├── tools/         # old experiments
 │   └── thermo-mood-cube-web-sim/
-│
-├── docs/          # build notes, logs, BOM, etc
-│
+├── docs/          # logs, notes, bom, etc
 └── README.md
-```
 
 ---
 
 ## 🧪 Old web sim thing
 
-Before building the hardware version I made a small web app to test color transitions.  
-It wasn’t meant to be a full project, just a way to experiment with ideas.  
+Before starting the hardware version I made a small web app to play with color transitions.  
+It wasn’t meant to be a final project, just a quick experiment.
 
-I moved it to the `tools/` folder because it’s not part of the final build.
-Full guide [Click Me](./tools/thermo-mood-cube-web-sim/readme.md)
+I moved it to the `tools/` folder because it’s not part of this build anymore.  
+Full guide here: `tools/thermo-mood-cube-web-sim/readme.md`
+
 ---
 
-## 📚 Things I’m Learning (aka struggling with)
+## 📚 Things I’m Learning 
 
-- PCB design + footprints
+- pcb design + footprints
 - proper routing + spacing
-- power requirements for lots of LEDs
-- reading sensors on ESP32
-- mapping data → animations
+- power requirements for leds
+- reading sensors on esp32
+- mapping data → colors
 - woodworking + epoxy casting
 
 Basically everything.
@@ -97,20 +92,20 @@ Basically everything.
 ## 🚧 Next Steps
 
 ### Hardware:
-- clean up PCB layout
-- add connectors for LED strips
-- do proper routing
-- order PCB prototype
+- keep learning KiCad  
+- try a cleaner layout with better spacing  
+- figure out power routing for LEDs  
+- decide when to order prototype PCBs  
 
 ### Firmware:
-- read sensor values
-- map them to different color modes
-- smooth the animations so they don’t look chaotic
+- pick an LED library  
+- plan basic animation structure  
+- write simple test code once parts arrive  
 
 ### Enclosure:
-- prototype wood frame
-- add diffuser
-- figure out heat/safety stuff
+- pick dimensions  
+- choose diffuser material  
+- make a small prototype (cardboard or wood)  
 
 ---
 
