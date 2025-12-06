@@ -22,4 +22,10 @@ waiting on hardware:
 - then add sensor reading
 - then combine everything
 
+
 might write some pseudocode in the meantime
+
+wrote a first version of the firmware using fake sensor values.
+right now it just simulates temp/humidity/noise and switches between a few basic "moods".
+i haven’t tested this on real hardware yet because i don't have parts, it’s more like a planning draft.
+when the parts arrive i’ll swap the fake sensor code with real sensor reads and tune the animations.
