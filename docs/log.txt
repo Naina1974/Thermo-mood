@@ -1,3 +1,6 @@
-dec 4 - started pcb layout in kicad, placed esp32 and led pads, routing is hard
-dec 3 - tested ws2812b strip with arduino, colors work but timing is weird
-dec 1 - sketched out some enclosure designs, cant decide on shape yet
+dec 6 - added more notes and organized the repo structure
+dec 5 - thinking about enclosure designs, wood frame sounds nice
+dec 4 - reading about led power requirements, need to calc current draw
+dec 3 - started this repo, opened kicad for the first time, very confused lol
+
+no parts ordered yet, still in planning phase
