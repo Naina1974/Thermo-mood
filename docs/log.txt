@@ -1,0 +1,3 @@
+dec 4 - started pcb layout in kicad, placed esp32 and led pads, routing is hard
+dec 3 - tested ws2812b strip with arduino, colors work but timing is weird
+dec 1 - sketched out some enclosure designs, cant decide on shape yet
