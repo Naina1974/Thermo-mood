@@ -1,146 +1,65 @@
-# Thermo Mood Cube
+# MoodCanvas
 
-A desk companion that changes color based on ambient temperature. The Thermo Mood Cube brings life to your workspace with temperature-responsive ambient lighting that shifts from cool blues to warm oranges.
+This is a project where I'm building a 256 LED art display that reacts to things in the room like temperature or sound. The idea is to make something chill and nice to look at, not just rainbow flashing lights. I'm designing a PCB for the LEDs and building a wood/epoxy frame so it looks good on a desk or wall.
 
-## Overview
+I haven't really done PCB design or woodworking before so I'm just figuring it out as I go. I'm using an ESP32 and a few sensors to drive animations.
 
-The Thermo Mood Cube is an open-source hardware project that combines Arduino, temperature sensing, and RGB LEDs to create a calming ambient light display. Rather than displaying exact temperature readings, it creates a subtle mood through color that reflects your environment.
+## Progress
 
-## Features
+- made a rough PCB layout in KiCad
+- testing LED animations on ESP32
+- sketched enclosure ideas
+- trying to understand power stuff for a lot of LEDs
 
-- **Temperature-Responsive Lighting** - Automatically shifts colors based on ambient temperature
-- **Smooth Transitions** - Gentle color fading creates a calming atmosphere
-- **Interactive Web Interface** - Real-time simulator, documentation, and data logging
-- **DIY Friendly** - Built with affordable, accessible components
-- **3D Printable** - Custom enclosure designs for light diffusion
-- **Open Source** - Fully documented hardware and software
+I'll upload more photos/screenshots later. For now here's a KiCad screenshot (work in progress):
 
-## Web Application
+![pcb](./images/pcb_screenshot.png)
 
-This repository includes a comprehensive web application featuring:
-
-- **Live 3D Visualization** - Animated cube showing real-time color changes
-- **Interactive Simulator** - Adjust temperature and see colors change instantly
-- **Complete Documentation** - Parts list, wiring diagrams, and assembly steps
-- **About Section** - Learn about the project philosophy and design
-- **Data Logger** - Track temperature readings from connected devices
-
-## Hardware Components
-
-- Arduino Nano (ATmega328P)
-- NTC Thermistor (10kΩ)
-- RGB LED (common cathode or 5050 SMD)
-- Resistors (10kΩ, 220Ω × 3)
-- 3D Printed Enclosure
-- Mini USB Cable
-
-## Technology Stack
-
-- **Frontend**: React + TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Database**: Supabase
-- **Build Tool**: Vite
-- **Hardware**: Arduino
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 17,18+ and npm
-- Supabase account (for data logging features)
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/naina1974/thermo-mood-cube.git
-cd thermo-mood-cube
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env` file with your Supabase credentials:
-```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-4. Run the development server:
-```bash
-npm run dev
-```
-
-5. Build for production:
-```bash
-npm run build
-```
-
-## Project Structure
+## Repo Structure
 
 ```
-thermo-mood-cube/
-├── src/
-│   ├── components/
-│   │   ├── Hero.tsx          # Landing section with animated cube
-│   │   ├── Simulator.tsx     # Interactive temperature simulator
-│   │   ├── Documentation.tsx # Build guide and parts list
-│   │   ├── About.tsx         # Project story and philosophy
-│   │   ├── DataLogger.tsx    # Real-time temperature logging
-│   │   └── Footer.tsx        # Site footer
-│   ├── lib/
-│   │   ├── supabase.ts       # Database client
-│   │   └── colorUtils.ts     # Temperature to color conversion
-│   ├── App.tsx
-│   └── main.tsx
-├── supabase/
-│   └── migrations/           # Database schema
-└── public/
+ moodcanvas/
+│
+├── firmware/                     # ESP32 firmware code
+│
+├── hardware/                     # Custom PCB design (KiCad)
+│
+├── cad/                          # Enclosure models & sketches
+│
+├── images/                       # Build photos + screenshots
+│
+├── tools/                        # Side tools & experiments
+│   └── thermo-mood-cube-web-sim/ # Web simulator
+│
+├── docs/                         # Build notes, logs, etc
+│
+└── README.md
+
 ```
 
-## Building the Hardware
+## Old web sim thing
 
-Visit the web application's documentation section for:
+Before building the hardware version I made a small web app to test color transitions. It wasn’t meant to be a final thing, just a way to play around with ideas. I put it in the tools folder because it’s not part of the main build.
 
-1. Complete parts list with specifications
-2. Detailed wiring diagrams
-3. 3D enclosure design guidelines
-4. Step-by-step assembly instructions
-5. Arduino firmware code
+## Stuff I'm trying to learn
 
-## Color Algorithm
+- pcb design
+- sensors
+- animations
+- esp32 programming
+- wood + epoxy
 
-The cube uses a custom algorithm that maps temperature to RGB values:
+## Next steps
 
-- **15-20°C**: Ice Blue → Cool Cyan
-- **20-23°C**: Mint Green
-- **23-27°C**: Warm Amber
-- **27-30°C**: Hot Orange
+- clean up PCB routing
+- build enclosure
+- write animation code based on sensor input
+- put everything together
 
-Colors transition smoothly using PWM on the Arduino's digital pins.
+## Why I'm doing this
 
-## Contributing
+I wanted to build something that feels alive and looks cool in a room, and also learn some new skills at the same time.
 
-Contributions are welcome! Feel free to:
+## Notes
 
-- Report bugs and request features
-- Submit pull requests
-- Share your builds and modifications
-- Improve documentation
-
-## License
-
-MIT License - feel free to use this project for personal or commercial purposes.
-
-## Acknowledgments
-
-- Built for makers and tinkerers who want to add personality to their workspace
-- Inspired by the ambient computing movement
-- Thanks to the open-source hardware community
-
----
-
-Made with care for the maker community
+Repo is going to be messy while I'm building. I’ll add more pictures and updates as I go.
