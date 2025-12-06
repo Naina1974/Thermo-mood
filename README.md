@@ -15,7 +15,7 @@ This is my first PCB layout test with the ESP32 and a few LEDs. I'm experimentin
 
 I'll upload more photos/screenshots later. For now here's a screenshot (work in progress):
 
-![pcb](./images/Early PCB Design WIP.jpg)
+![pcb](./images/PCB.jpg)
 
 ## Repo Structure
 
