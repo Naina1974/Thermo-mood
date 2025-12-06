@@ -1,0 +1,24 @@
+# rough bom (not final, not ordered)
+
+electronics:
+- esp32 dev board
+- ws2812b leds
+- temp/humidity sensor
+- mic module (later)
+- 5v power supply
+- resistors + caps
+
+wiring:
+- jumper wires
+- connectors
+- heat shrink
+
+pcb/prototyping:
+- pcb fabrication
+- perfboard
+- headers
+
+enclosure:
+- wood sheet
+- diffuser acrylic
+- epoxy resin
